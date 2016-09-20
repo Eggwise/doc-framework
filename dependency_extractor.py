@@ -2,14 +2,11 @@ import re
 
 test = '''
 
-
 #dep.start gast diagram.swa asd asd
-
 
 gozer
 
 kerel
-
 
 #dep.end gast
 '''
@@ -110,10 +107,6 @@ class Dependency():
         self.compiler_name = compiler_name
         self.compiler_args = compiler_args
         self.source = source
-
-
-
-
 
 
 dependencies = find_dependencies(test)
